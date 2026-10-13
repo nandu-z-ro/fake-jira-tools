@@ -1,0 +1,168 @@
+=== search_issues(component='Label Classifier') ===
+{
+  "startAt": 0,
+  "maxResults": 50,
+  "total": 5,
+  "issues": [
+    {
+      "id": "10412",
+      "key": "TRIAGE-184",
+      "self": "/rest/api/3/issue/10412",
+      "fields": {
+        "summary": "Triage bot applied 'billing' label to an SSO login failure",
+        "status": {
+          "name": "In Progress",
+          "statusCategory": {
+            "key": "indeterminate"
+          }
+        },
+        "components": [
+          {
+            "id": "10201",
+            "name": "Label Classifier"
+          },
+          {
+            "id": "10204",
+            "name": "Trace Viewer"
+          }
+        ]
+      }
+    },
+    {
+      "id": "10405",
+      "key": "TRIAGE-179",
+      "self": "/rest/api/3/issue/10405",
+      "fields": {
+        "summary": "Label classifier ignores non-English ticket bodies",
+        "status": {
+          "name": "To Do",
+          "statusCategory": {
+            "key": "new"
+          }
+        },
+        "components": [
+          {
+            "id": "10201",
+            "name": "Label Classifier"
+          }
+        ]
+      }
+    },
+    {
+      "id": "10398",
+      "key": "SUPPORT-77",
+      "self": "/rest/api/3/issue/10398",
+      "fields": {
+        "summary": "Duplicate detection marks reopened tickets as duplicates of themselves",
+        "status": {
+          "name": "To Do",
+          "statusCategory": {
+            "key": "new"
+          }
+        },
+        "components": [
+          {
+            "id": "10201",
+            "name": "Label Classifier"
+          },
+          {
+            "id": "10202",
+            "name": "Duplicate Detector"
+          }
+        ]
+      }
+    },
+    {
+      "id": "10380",
+      "key": "SUPPORT-66",
+      "self": "/rest/api/3/issue/10380",
+      "fields": {
+        "summary": "Label classifier tags refund requests as 'shipping'",
+        "status": {
+          "name": "In Progress",
+          "statusCategory": {
+            "key": "indeterminate"
+          }
+        },
+        "components": [
+          {
+            "id": "10201",
+            "name": "Label Classifier"
+          }
+        ]
+      }
+    },
+    {
+      "id": "10355",
+      "key": "SUPPORT-52",
+      "self": "/rest/api/3/issue/10355",
+      "fields": {
+        "summary": "Label classifier confidence score missing from bot comment",
+        "status": {
+          "name": "Done",
+          "statusCategory": {
+            "key": "done"
+          }
+        },
+        "components": [
+          {
+            "id": "10201",
+            "name": "Label Classifier"
+          },
+          {
+            "id": "10204",
+            "name": "Trace Viewer"
+          }
+        ]
+      }
+    }
+  ]
+}
+
+=== get_issue('TRIAGE-184') ===
+{
+  "id": "10412",
+  "key": "TRIAGE-184",
+  "self": "/rest/api/3/issue/10412",
+  "fields": {
+    "summary": "Triage bot applied 'billing' label to an SSO login failure",
+    "status": {
+      "name": "In Progress",
+      "statusCategory": {
+        "key": "indeterminate"
+      }
+    },
+    "priority": {
+      "name": "High"
+    },
+    "components": [
+      {
+        "id": "10201",
+        "name": "Label Classifier"
+      },
+      {
+        "id": "10204",
+        "name": "Trace Viewer"
+      }
+    ],
+    "assignee": {
+      "displayName": "Priya Venkataraman"
+    },
+    "created": "2024-08-14T09:22:41.318+1000",
+    "description": "Bot chose the label from the ticket title alone; the SSO error body was never read."
+  }
+}
+
+=== update_status('SUPPORT-77', 'In Progress') ===
+{
+  "key": "SUPPORT-77",
+  "fields": {
+    "status": {
+      "name": "In Progress",
+      "statusCategory": {
+        "key": "indeterminate"
+      }
+    }
+  }
+}
+
