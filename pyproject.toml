@@ -1,0 +1,5 @@
+[project]
+name = "fake-jira-tools"
+version = "0.1.0"
+description = "Fake Jira search, detail and update-status tools shaped like Jira Cloud REST v3"
+requires-python = ">=3.12"
