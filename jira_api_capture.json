@@ -1,0 +1,63 @@
+{
+  "_notes": "Reference shapes for the fake Jira tools, trimmed to the fields the tools return. Names and data are made up. Real API docs: https://developer.atlassian.com/cloud/jira/platform/rest/v3/",
+  "issue_get": {
+    "id": "10412",
+    "key": "TRIAGE-184",
+    "self": "/rest/api/3/issue/10412",
+    "fields": {
+      "summary": "Triage bot applied 'billing' label to an SSO login failure",
+      "status": {"name": "In Progress", "statusCategory": {"key": "indeterminate"}},
+      "priority": {"name": "High"},
+      "components": [
+        {"id": "10201", "name": "Label Classifier"},
+        {"id": "10204", "name": "Trace Viewer"}
+      ],
+      "assignee": {"displayName": "Alex Sample"},
+      "created": "2024-08-14T09:22:41.318+1000",
+      "description": "Bot chose the label from the ticket title alone."
+    }
+  },
+  "issue_search": {
+    "startAt": 0,
+    "maxResults": 50,
+    "total": 2,
+    "issues": [
+      {
+        "id": "10412",
+        "key": "TRIAGE-184",
+        "self": "/rest/api/3/issue/10412",
+        "fields": {
+          "summary": "Triage bot applied 'billing' label to an SSO login failure",
+          "status": {"name": "In Progress", "statusCategory": {"key": "indeterminate"}},
+          "components": [
+            {"id": "10201", "name": "Label Classifier"},
+            {"id": "10204", "name": "Trace Viewer"}
+          ]
+        }
+      },
+      {
+        "id": "10398",
+        "key": "SUPPORT-77",
+        "self": "/rest/api/3/issue/10398",
+        "fields": {
+          "summary": "Duplicate detection marks reopened tickets as duplicates of themselves",
+          "status": {"name": "To Do", "statusCategory": {"key": "new"}},
+          "components": [{"id": "10201", "name": "Label Classifier"}]
+        }
+      }
+    ]
+  },
+  "issue_transition": {
+    "request": {
+      "endpoint": "POST /rest/api/3/issue/TRIAGE-184/transitions",
+      "transition": {"id": "21", "name": "Start Progress"}
+    },
+    "response": {"http_status": 204, "body": ""},
+    "issue_after": {
+      "key": "TRIAGE-184",
+      "fields": {
+        "status": {"name": "In Progress", "statusCategory": {"key": "indeterminate"}}
+      }
+    }
+  }
+}

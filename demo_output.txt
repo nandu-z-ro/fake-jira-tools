@@ -146,7 +146,7 @@
       }
     ],
     "assignee": {
-      "displayName": "Priya Venkataraman"
+      "displayName": "Alex Sample"
     },
     "created": "2024-08-14T09:22:41.318+1000",
     "description": "Bot chose the label from the ticket title alone; the SSO error body was never read."
